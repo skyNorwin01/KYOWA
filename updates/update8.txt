@@ -1,0 +1,15 @@
+kyowa Update: 
+booking list filtering
+
+Issue: 
+consignee and shipper filter
+
+Solution: 
+frm bookinglist.vb
+shipper - line 94
+consignee - line 97
+
+
+Manila
+02-06-2024
+Version 8

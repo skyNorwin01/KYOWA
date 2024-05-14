@@ -1,0 +1,15 @@
+kyowa Update: 
+booking list filtering
+
+Issue: 
+shipper filter for export
+
+Solution: 
+frm bookinglist.vb
+line 58
+
+
+
+Manila
+02-06-2024
+Version 9

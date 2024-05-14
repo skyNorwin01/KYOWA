@@ -1,0 +1,14 @@
+kyowa Update: 
+crystal report rfp
+
+Issue: 
+100k+ displaying ######
+
+Solution: 
+optimize size of column in crprintrfp.rpt
+
+
+
+Manila
+04-02-2024
+Version 12

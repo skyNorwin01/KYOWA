@@ -1,0 +1,15 @@
+kyowa Update: 
+RFP Crystal Report Generator
+
+Issue: 
+cannot view other value like shipper name and shipper id
+
+Solution: 
+frmRequestForPaymentList.vb
+line 203-384
+
+
+
+Manila
+02-16-2024
+Version 10

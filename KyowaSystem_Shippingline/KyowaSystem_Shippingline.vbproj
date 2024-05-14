@@ -1,0 +1,1071 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC1317D0-8E12-46E1-8974-9944A9FFCEEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KyowaSystem_Shippingline.My.MyApplication</StartupObject>
+    <RootNamespace>KyowaSystem_Shippingline</RootNamespace>
+    <AssemblyName>KyowaSystem_Shippingline_v2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>\\192.168.10.213\SoftwareApps\KYOWA\2022\64bit\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\192.168.10.213\SoftwareApps\KYOWA\2022\64bit\</InstallUrl>
+    <UpdateUrl>\\192.168.10.213\SoftwareApps\KYOWA\2022\64bit\</UpdateUrl>
+    <PublisherName>ryz_dev</PublisherName>
+    <MinimumRequiredVersion>2.0.1.7</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>2.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KyowaSystem_Shippingline_v2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KyowaSystem_Shippingline_v2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1965BA33C030D25F98DA446E2750F25BA7A3B73A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KyowaSystem_Shippingline_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8-ship-wheel-100 %283%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\extras\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WinSCPnet">
+      <HintPath>..\..\..\..\..\Program Files (x86)\WinSCP\WinSCPnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cr\CrKyowaBL.vb">
+      <DependentUpon>CrKyowaBL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="cr\CrKyowaBL_LC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrKyowaBL_LC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crManifestBLRates.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crManifestBLRates.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crManifest_bk.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crManifest_bk.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\cr_bl_rates.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cr_bl_rates.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER DAMAGE AND DETENTION\frmDamage.Designer.vb">
+      <DependentUpon>frmDamage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER DAMAGE AND DETENTION\frmDamage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cr\crBookingList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crBookingList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\CrCorrectionAdvice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrCorrectionAdvice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crCyRfp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crCyRfp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crDeliveryOrder.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crDeliveryOrder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crGenerateATW.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crGenerateATW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crGenerateNewATW.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crGenerateNewATW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crGenerateRfp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crGenerateRfp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crGenerateRFPStorage.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crGenerateRFPStorage.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crGenerateTsReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crGenerateTsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crKyowaBlRider.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crKyowaBlRider.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crManifest.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crManifest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crManifest_SENDING_KYOWA_BL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crManifest_SENDING_KYOWA_BL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crManifest_SENDING_WESPAC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crManifest_SENDING_WESPAC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crManifest_WESPAC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crManifest_WESPAC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crPrintRFP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crPrintRFP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crPrintRFPStorage.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crPrintRFPStorage.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\CrWespacNonNegoBL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrWespacNonNegoBL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\CrWespacOBL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrWespacOBL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\FrmPrintForm.Designer.vb">
+      <DependentUpon>FrmPrintForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cr\FrmPrintForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\APPLY BLNO\frmApplyBlno.Designer.vb">
+      <DependentUpon>frmApplyBlno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\APPLY BLNO\frmApplyBlno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ATW\FrmATWMenu.Designer.vb">
+      <DependentUpon>FrmATWMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ATW\FrmATWMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\BL\FrmBLForm.Designer.vb">
+      <DependentUpon>FrmBLForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\BL\FrmBLForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\BL\FrmGenerateBlMenus.Designer.vb">
+      <DependentUpon>FrmGenerateBlMenus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\BL\FrmGenerateBlMenus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\BL\RIDER\frmBLRider.Designer.vb">
+      <DependentUpon>frmBLRider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\BL\RIDER\frmBLRider.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\BOOKING\ACTIONS\FrmNewBLNO.Designer.vb">
+      <DependentUpon>FrmNewBLNO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\BOOKING\ACTIONS\FrmNewBLNO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\BOOKING\ACTIONS\FrmReasons.Designer.vb">
+      <DependentUpon>FrmReasons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\BOOKING\ACTIONS\FrmReasons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CARGO LOADING\FrmImportCargoLoadingMenu.Designer.vb">
+      <DependentUpon>FrmImportCargoLoadingMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CARGO LOADING\FrmImportCargoLoadingMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CHARGES\FrmBookingList.Designer.vb">
+      <DependentUpon>FrmBookingList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CHARGES\FrmBookingList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CHARGES\frmSetCharges.Designer.vb">
+      <DependentUpon>frmSetCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CHARGES\frmSetCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER BOOKING\FrmContainerBookingNumber.Designer.vb">
+      <DependentUpon>FrmContainerBookingNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER BOOKING\FrmContainerBookingNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\BOOKING\FrmInitialBooking.Designer.vb">
+      <DependentUpon>FrmInitialBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\BOOKING\FrmInitialBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmAddManualContainer.Designer.vb">
+      <DependentUpon>FrmAddManualContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmAddManualContainer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryEditRow.Designer.vb">
+      <DependentUpon>FrmContainerInventoryEditRow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryEditRow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryList.Designer.vb">
+      <DependentUpon>FrmContainerInventoryList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryPerBooking.Designer.vb">
+      <DependentUpon>FrmContainerInventoryPerBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryPerBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryUpload.Designer.vb">
+      <DependentUpon>FrmContainerInventoryUpload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER RELEASE\FrmContainerRelease.Designer.vb">
+      <DependentUpon>FrmContainerRelease.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER RELEASE\FrmContainerRelease.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmCorrectionAdvice.Designer.vb">
+      <DependentUpon>FrmCorrectionAdvice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CONTAINER INVENTORY\FrmCorrectionAdvice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\CORRECTION_ADVICE\FrmCorrectionAdviceList.Designer.vb">
+      <DependentUpon>FrmCorrectionAdviceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\CORRECTION_ADVICE\FrmCorrectionAdviceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\DELIVERY ORDER\FrmDeliveryOrder.Designer.vb">
+      <DependentUpon>FrmDeliveryOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\DELIVERY ORDER\FrmDeliveryOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\EAPPROVAL\FrmEapprovalList.Designer.vb">
+      <DependentUpon>FrmEapprovalList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\EAPPROVAL\FrmEapprovalList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\EAPPROVAL\FrmEApprovalMenu.Designer.vb">
+      <DependentUpon>FrmEApprovalMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\EAPPROVAL\FrmEApprovalMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FrmMenus.Designer.vb">
+      <DependentUpon>FrmMenus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\FrmMenus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\IMPORT AND LEASED CONTAINER\FrmGenerateImportAndLeasedContainerMenu.Designer.vb">
+      <DependentUpon>FrmGenerateImportAndLeasedContainerMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\IMPORT AND LEASED CONTAINER\FrmGenerateImportAndLeasedContainerMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\LandingForm.Designer.vb">
+      <DependentUpon>LandingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\LandingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\LOGIN\FrmChangePass.designer.vb">
+      <DependentUpon>FrmChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\LOGIN\FrmChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\LOGIN\FrmLogin.designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\LOGIN\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddCharges.Designer.vb">
+      <DependentUpon>FrmAddCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddCurrency.Designer.vb">
+      <DependentUpon>FrmAddCurrency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddCurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddDepot.Designer.vb">
+      <DependentUpon>FrmAddDepot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddDepot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddFeederCarrier.Designer.vb">
+      <DependentUpon>FrmAddFeederCarrier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddFeederCarrier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddLeasing.Designer.vb">
+      <DependentUpon>FrmAddLeasing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddLeasing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddOutPort.Designer.vb">
+      <DependentUpon>FrmAddOutPort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddOutPort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddPort.Designer.vb">
+      <DependentUpon>FrmAddPort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddPort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddShipperConsigneeNotify.Designer.vb">
+      <DependentUpon>FrmAddShipperConsigneeNotify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddShipperConsigneeNotify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\frmAddSpecialCharges.Designer.vb">
+      <DependentUpon>frmAddSpecialCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\frmAddSpecialCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddVessel.Designer.vb">
+      <DependentUpon>FrmAddVessel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmAddVessel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmChargesTemplates.Designer.vb">
+      <DependentUpon>FrmChargesTemplates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmChargesTemplates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmTrucker.Designer.vb">
+      <DependentUpon>FrmTrucker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MAINTENANCE\FrmTrucker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MANIFEST\FrmManifestMenus.Designer.vb">
+      <DependentUpon>FrmManifestMenus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MANIFEST\FrmManifestMenus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ON-HIRE UNITS\FrmGenerateOnhireUnitsMenu.Designer.vb">
+      <DependentUpon>FrmGenerateOnhireUnitsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ON-HIRE UNITS\FrmGenerateOnhireUnitsMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ON-HIRE UNITS\FrmOnhireUnitEditRow.Designer.vb">
+      <DependentUpon>FrmOnhireUnitEditRow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ON-HIRE UNITS\FrmOnhireUnitEditRow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ON-HIRE UNITS\FrmOnhireUnits.Designer.vb">
+      <DependentUpon>FrmOnhireUnits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ON-HIRE UNITS\FrmOnhireUnits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\OTHER CHARGES\frmOtherCharges.Designer.vb">
+      <DependentUpon>frmOtherCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\OTHER CHARGES\frmOtherCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REPORTS\FrmGenerateBookingList.Designer.vb">
+      <DependentUpon>FrmGenerateBookingList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REPORTS\FrmGenerateBookingList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REPORTS\FrmGenerateLoadingSequence.Designer.vb">
+      <DependentUpon>FrmGenerateLoadingSequence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REPORTS\FrmGenerateLoadingSequence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REPORTS\FrmGenerateTSReport.Designer.vb">
+      <DependentUpon>FrmGenerateTSReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REPORTS\FrmGenerateTSReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REPORTS\SUMMARY OF BOOKING\FrmSummaryOfBookingMenu.Designer.vb">
+      <DependentUpon>FrmSummaryOfBookingMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REPORTS\SUMMARY OF BOOKING\FrmSummaryOfBookingMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPayment.Designer.vb">
+      <DependentUpon>FrmRequestForPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPaymentList.Designer.vb">
+      <DependentUpon>FrmRequestForPaymentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPaymentList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPaymentStorage.Designer.vb">
+      <DependentUpon>FrmRequestForPaymentStorage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPaymentStorage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\RFP OF TBS\FrmNewRequestForPaymentForCy.Designer.vb">
+      <DependentUpon>FrmNewRequestForPaymentForCy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\RFP OF TBS\FrmNewRequestForPaymentForCy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\RFP OF TBS\FrmRequestForPaymentCY.Designer.vb">
+      <DependentUpon>FrmRequestForPaymentCY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REQUEST FOR PAYMENT\RFP OF TBS\FrmRequestForPaymentCY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\SPECIAL CHARGES\frmGenerateSpecialCharges.Designer.vb">
+      <DependentUpon>frmGenerateSpecialCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\SPECIAL CHARGES\frmGenerateSpecialCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\SPECIAL CHARGES\FrmSpecialChargesMenu.Designer.vb">
+      <DependentUpon>FrmSpecialChargesMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\SPECIAL CHARGES\FrmSpecialChargesMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\TRANSFER OF BOOKING\FrmTransferBooking.Designer.vb">
+      <DependentUpon>FrmTransferBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\TRANSFER OF BOOKING\FrmTransferBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\UPDATES\FrmUpdates.Designer.vb">
+      <DependentUpon>FrmUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\UPDATES\FrmUpdates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalDeclaration.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SQLClass.vb" />
+    <Compile Include="THEMES\Themes.Designer.vb">
+      <DependentUpon>Themes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="THEMES\Themes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cr\CrKyowaBL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrKyowaBL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\CrKyowaBL_LC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrKyowaBL_LC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crManifestBLRates.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crManifestBLRates.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crManifest_bk.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crManifest_bk.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\cr_bl_rates.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cr_bl_rates.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER DAMAGE AND DETENTION\frmDamage.resx">
+      <DependentUpon>frmDamage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crBookingList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crBookingList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\CrCorrectionAdvice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrCorrectionAdvice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crCyRfp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crCyRfp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crDeliveryOrder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crDeliveryOrder.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crGenerateATW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crGenerateATW.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crGenerateNewATW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crGenerateNewATW.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crGenerateRfp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crGenerateRfp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crGenerateRFPStorage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crGenerateRFPStorage.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crGenerateTsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crGenerateTsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crKyowaBlRider.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crKyowaBlRider.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crManifest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crManifest.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crManifest_SENDING_KYOWA_BL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crManifest_SENDING_KYOWA_BL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crManifest_SENDING_WESPAC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crManifest_SENDING_WESPAC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crManifest_WESPAC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crManifest_WESPAC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crPrintRFP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crPrintRFP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crPrintRFPStorage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crPrintRFPStorage.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\CrWespacNonNegoBL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrWespacNonNegoBL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\CrWespacOBL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrWespacOBL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\FrmPrintForm.resx">
+      <DependentUpon>FrmPrintForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\APPLY BLNO\frmApplyBlno.resx">
+      <DependentUpon>frmApplyBlno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ATW\FrmATWMenu.resx">
+      <DependentUpon>FrmATWMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\BL\FrmBLForm.resx">
+      <DependentUpon>FrmBLForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\BL\FrmGenerateBlMenus.resx">
+      <DependentUpon>FrmGenerateBlMenus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\BL\RIDER\frmBLRider.resx">
+      <DependentUpon>frmBLRider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\BOOKING\ACTIONS\FrmNewBLNO.resx">
+      <DependentUpon>FrmNewBLNO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\BOOKING\ACTIONS\FrmReasons.resx">
+      <DependentUpon>FrmReasons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CARGO LOADING\FrmImportCargoLoadingMenu.resx">
+      <DependentUpon>FrmImportCargoLoadingMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CHARGES\FrmBookingList.resx">
+      <DependentUpon>FrmBookingList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CHARGES\frmSetCharges.resx">
+      <DependentUpon>frmSetCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER BOOKING\FrmContainerBookingNumber.resx">
+      <DependentUpon>FrmContainerBookingNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\BOOKING\FrmInitialBooking.resx">
+      <DependentUpon>FrmInitialBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER INVENTORY\FrmAddManualContainer.resx">
+      <DependentUpon>FrmAddManualContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryEditRow.resx">
+      <DependentUpon>FrmContainerInventoryEditRow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryList.resx">
+      <DependentUpon>FrmContainerInventoryList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryPerBooking.resx">
+      <DependentUpon>FrmContainerInventoryPerBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER INVENTORY\FrmContainerInventoryUpload.resx">
+      <DependentUpon>FrmContainerInventoryUpload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER RELEASE\FrmContainerRelease.resx">
+      <DependentUpon>FrmContainerRelease.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CONTAINER INVENTORY\FrmCorrectionAdvice.resx">
+      <DependentUpon>FrmCorrectionAdvice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\CORRECTION_ADVICE\FrmCorrectionAdviceList.resx">
+      <DependentUpon>FrmCorrectionAdviceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\DELIVERY ORDER\FrmDeliveryOrder.resx">
+      <DependentUpon>FrmDeliveryOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\EAPPROVAL\FrmEapprovalList.resx">
+      <DependentUpon>FrmEapprovalList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\EAPPROVAL\FrmEApprovalMenu.resx">
+      <DependentUpon>FrmEApprovalMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FrmMenus.resx">
+      <DependentUpon>FrmMenus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\IMPORT AND LEASED CONTAINER\FrmGenerateImportAndLeasedContainerMenu.resx">
+      <DependentUpon>FrmGenerateImportAndLeasedContainerMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\LandingForm.resx">
+      <DependentUpon>LandingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\LOGIN\FrmChangePass.resx">
+      <DependentUpon>FrmChangePass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\LOGIN\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddCharges.resx">
+      <DependentUpon>FrmAddCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddCurrency.resx">
+      <DependentUpon>FrmAddCurrency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddDepot.resx">
+      <DependentUpon>FrmAddDepot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddFeederCarrier.resx">
+      <DependentUpon>FrmAddFeederCarrier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddLeasing.resx">
+      <DependentUpon>FrmAddLeasing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddOutPort.resx">
+      <DependentUpon>FrmAddOutPort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddPort.resx">
+      <DependentUpon>FrmAddPort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddShipperConsigneeNotify.resx">
+      <DependentUpon>FrmAddShipperConsigneeNotify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\frmAddSpecialCharges.resx">
+      <DependentUpon>frmAddSpecialCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmAddVessel.resx">
+      <DependentUpon>FrmAddVessel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmChargesTemplates.resx">
+      <DependentUpon>FrmChargesTemplates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MAINTENANCE\FrmTrucker.resx">
+      <DependentUpon>FrmTrucker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MANIFEST\FrmManifestMenus.resx">
+      <DependentUpon>FrmManifestMenus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ON-HIRE UNITS\FrmGenerateOnhireUnitsMenu.resx">
+      <DependentUpon>FrmGenerateOnhireUnitsMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ON-HIRE UNITS\FrmOnhireUnitEditRow.resx">
+      <DependentUpon>FrmOnhireUnitEditRow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ON-HIRE UNITS\FrmOnhireUnits.resx">
+      <DependentUpon>FrmOnhireUnits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\OTHER CHARGES\frmOtherCharges.resx">
+      <DependentUpon>frmOtherCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REPORTS\FrmGenerateBookingList.resx">
+      <DependentUpon>FrmGenerateBookingList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REPORTS\FrmGenerateLoadingSequence.resx">
+      <DependentUpon>FrmGenerateLoadingSequence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REPORTS\FrmGenerateTSReport.resx">
+      <DependentUpon>FrmGenerateTSReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REPORTS\SUMMARY OF BOOKING\FrmSummaryOfBookingMenu.resx">
+      <DependentUpon>FrmSummaryOfBookingMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPayment.resx">
+      <DependentUpon>FrmRequestForPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPaymentList.resx">
+      <DependentUpon>FrmRequestForPaymentList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REQUEST FOR PAYMENT\FrmRequestForPaymentStorage.resx">
+      <DependentUpon>FrmRequestForPaymentStorage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REQUEST FOR PAYMENT\RFP OF TBS\FrmNewRequestForPaymentForCy.resx">
+      <DependentUpon>FrmNewRequestForPaymentForCy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REQUEST FOR PAYMENT\RFP OF TBS\FrmRequestForPaymentCY.resx">
+      <DependentUpon>FrmRequestForPaymentCY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\SPECIAL CHARGES\frmGenerateSpecialCharges.resx">
+      <DependentUpon>frmGenerateSpecialCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\SPECIAL CHARGES\FrmSpecialChargesMenu.resx">
+      <DependentUpon>FrmSpecialChargesMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\TRANSFER OF BOOKING\FrmTransferBooking.resx">
+      <DependentUpon>FrmTransferBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\UPDATES\FrmUpdates.resx">
+      <DependentUpon>FrmUpdates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THEMES\Themes.resx">
+      <DependentUpon>Themes.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KyowaSystem_Shippingline_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FORMS\BOOKING\OTHER DETAILS\" />
+    <Folder Include="FORMS\FCL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DAO">
+      <Guid>{00025E01-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access">
+      <Guid>{4AFFC9A0-5F99-101B-AF4E-00AA003F0F07}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons8-ship-wheel-100 %283%29.ico" />
+    <None Include="Resources\icons8-ship-wheel-100 %281%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

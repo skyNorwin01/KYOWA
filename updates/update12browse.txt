@@ -1,0 +1,25 @@
+
+tbl_marks_and_numbers
+24109
+24110
+24111
+24112
+24113
+
+tbl_booking
+12127
+
+tbl_bl
+6063
+
+all id in designated table where modified
+
+from blno
+MNL-0000157
+to
+MNL-0132817
+
+05/05/2024
+r_kyowa_v2
+kyowa system
+
